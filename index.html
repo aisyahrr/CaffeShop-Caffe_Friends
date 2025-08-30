@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/asset/Image/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Caffe Friends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+        <img src="/asset/Image/Logo.png" alt="" class="logo">
+        <div class="nav-items">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-btn" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div id="sideMenu">
+                <button class="close-btn" onclick="closeMenu()">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </button>
+                <ul>
+                    <li><a href="#" onclick="closeMenu()">Home</a></li>
+                    <li><a href="#about" onclick="closeMenu()">About</a></li>
+                    <li><a href="#blog" onclick="closeMenu()">Blog</a></li>
+                    <li><a href="#menu" onclick="closeMenu()">Menu</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="content">
+                <img src="/asset/Image/bijikopi.png" alt="" class="img-kopi">
+                <div class="hero-text">
+                    <h2>Savor the Moment</h2>
+                    <p>One Sip at a Time</p>
+                </div>
+                <div class="hero-image">
+                    <img src="/asset/Image/cofe.png" alt="">
+                </div>
+            </div>
+
+        </section>
+        <!-- Blog -->
+        <section class="blog" id="blog">
+            <div class="blog-title">
+                <h2>Stay Caffeinated, Stay Cool</h2>
+                <p>Every sip tells a story. Dive into this week’s hottest coffee picks and level up your caffeine game!</p>
+            </div>
+            <div class="blog-container" id="blogContainer"></div>
+        </section>
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="/asset/Image/about.png" alt="">
+                </div>
+                <div class="about-content">
+                    <h2>About Caffe Friends</h2>
+                    <div class="paragraphs">
+                        <p>Cafe Friends isn't just a cafe; it's a home for friends. We created this space out of a passion for great coffee and a desire to build a welcoming community where everyone feels at ease.</p>
+                        <p>We believe in the power of a good cup of coffee to bring people together. That's why we meticulously select our beans and have a team of baristas who are passionate about their craft. Our goal is simple: to serve exceptional coffee in a place that feels like a home away from home.</p>
+                    </div>
+                    <a href="#" class="btn">Learn More</a>    
+                </div>
+            </div>
+        </section>
+        <!-- Menu -->
+        <section class="menu" id="menu">
+                <div class="menu-title">
+                    <h2>Our Special Menu</h2>
+                    <p>Experience an unforgettable blend of flavors. Explore our diverse menu, from your favorite coffee to refreshing mocktail creations. Every cup and glass is crafted with passion to indulge your senses.</p>
+                </div>
+                <div class="menu-container">
+                    <!-- ice late -->
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <i class="icon-heart fa-regular fa-heart"></i>
+                            <img src="/asset/Image/menu1.jpg" alt="">
+                        </div>
+                        <h3 class="title">Ice Late</h3>
+                        <p>dibuat dengan espresso, susu dingin, dan es batu, tanpa steamed milk atau busa tebal di atasnya.</p>
+                        <div class="order-flex">
+                            <span class="price">$2.22</span>
+                            <a href="">Order Here</a>
+                        </div>
+                    </div>
+                    <!-- caramel -->
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <i class="icon-heart fa-regular fa-heart"></i>
+                            <img src="/asset/Image/menu2.jpg" alt="">
+                        </div>
+                        <h3 class="title">Caramel Macchiato</h3>
+                        <p>Espresso dengan susu steamed dan sirup vanilla, ditambahkan saus karamel di atasnya.</p>
+                        <div class="order-flex">
+                            <span class="price">$3.00</span>
+                            <a href="">Order Here</a>
+                        </div>
+                    </div>
+                    <!-- espresso -->
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <i class="icon-heart fa-regular fa-heart"></i>
+                            <img src="/asset/Image/menu3.jpg" alt="">
+                        </div>
+                        <h3 class="title">Espresso</h3>
+                        <p>Kopi pekat dengan rasa kuat, dibuat dengan mengekstrak kopi dengan tekanan tinggi.</p>
+                        <div class="order-flex">
+                            <span class="price">$1.33</span>
+                            <a href="">Order Here</a>
+                        </div>
+                    </div>
+                    <!-- vietnamese -->
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <i class="icon-heart fa-regular fa-heart"></i>
+                            <img src="/asset/Image/menu4.jpg" alt="">
+                        </div>
+                        <h3 class="title">Vietnamese Coffee</h3>
+                        <p>Kopi Vietnam yang kuat dengan susu kental manis.</p>
+                        <div class="order-flex">
+                            <span class="price">$2.00</span>
+                            <a href="">Order Here</a>
+                        </div>
+                    </div>
+                    <!-- mocktail -->
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <i class="icon-heart fa-regular fa-heart"></i>
+                            <img src="/asset/Image/menu5.jpg" alt="">
+                        </div>
+                        <h3 class="title">Tropical Fizz</h3>
+                        <p>Jus mangga, soda lemon-lime, sirup vanila, es batu.</p>
+                        <div class="order-flex">
+                            <span class="price">$2.00</span>
+                            <a href="">Order Here</a>
+                        </div>
+                    </div>
+                    <!-- blue lagoon -->
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <i class="icon-heart fa-regular fa-heart"></i>
+                            <img src="/asset/Image/menu6.jpg" alt="">
+                        </div>
+                        <h3 class="title">Blue Lagoon Mocktail</h3>
+                        <p>Blue curaçao sirup (non-alkohol), lemon soda, es batu, lemon slice.</p>
+                        <div class="order-flex">
+                            <span class="price">$3.33</span>
+                            <a href="">Order Here</a>
+                        </div>
+                    </div>
+                    <!-- watermelon -->
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <i class="icon-heart fa-regular fa-heart"></i>
+                            <img src="/asset/Image/menu7.jpg" alt="">
+                        </div>
+                        <h3 class="title">Watermelon Cooler</h3>
+                        <p>Jus semangka, perasan jeruk nipis, madu, es batu.</p>
+                        <div class="order-flex">
+                            <span class="price">$3.00</span>
+                            <a href="">Order Here</a>
+                        </div>
+                    </div>
+                    <!-- watermelon -->
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <i class="icon-heart fa-regular fa-heart"></i>
+                            <img src="/asset/Image/menu8.jpg" alt="">
+                        </div>
+                        <h3 class="title">Affogato Mocktail</h3>
+                        <p>Espresso, es krim vanilla, susu dingin, sirup karamel.</p>
+                        <div class="order-flex">
+                            <span class="price">$3.00</span>
+                            <a href="">Order Here</a>
+                        </div>
+                    </div>
+        </section>
+        <!-- contact -->
+        <section class="contact" id="contact">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact & Reservation</h2>
+                    <p>Ingin reservasi meja atau tanya menu spesial kami? Hubungi kami langsung atau isi form reservasi.</p>
+                    <ul>
+                        <li class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <p><strong>Telepon :</strong> +62 812-3456-7890</p>
+                        </li>
+                        <li class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p><strong>Email :</strong> caffefriends@gmail.com </p>
+                        </li>
+                        <li class="info-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <p><strong>Jam Operasional :</strong> Senin - Minggu, 08.00 - 22.00</p>
+                        </li>
+                        <li class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p><strong>Alamat :</strong> Jl. Merdeka No.123, Jakarta, Indonesia</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reservation-form">
+                    <form>
+                        <!-- Nama -->
+                        <div class="form-group span-3">
+                            <label for="nama">Nama Lengkap</label>
+                            <input id="nama" type="text" placeholder="Nama Lengkap" required />
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group span-2">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="Email" required />
+                        </div>
+
+                        <!-- Telepon -->
+                        <div class="form-group span-1">
+                            <label for="tel">Nomor Telepon</label>
+                            <input id="tel" type="tel" placeholder="Nomor Telepon" required />
+                        </div>
+
+                        <!-- Jumlah Orang -->
+                        <div class="form-group">
+                            <label for="jumlah">Jumlah Orang</label>
+                            <input id="jumlah" type="number" placeholder="Jumlah Orang" min="1" required />
+                        </div>
+
+                        <!-- Tanggal -->
+                        <div class="form-group">
+                            <label for="date">Tanggal</label>
+                            <input id="date" type="date" required />
+                        </div>
+
+                        <!-- Jam -->
+                        <div class="form-group">
+                            <label for="time">Jam</label>
+                            <input id="time" type="time" required />
+                        </div>
+
+                        <!-- Catatan -->
+                        <div class="form-group span-3">
+                            <label for="note">Catatan (opsional)</label>
+                            <textarea id="note" placeholder="Catatan (opsional)" rows="4"></textarea>
+                        </div>
+
+                        <!-- Button -->
+                        <button type="submit">Kirim Reservasi</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div>
+            <img src="/asset/Image/Logo.png" alt="">
+        </div>
+        <div class="footer-desc">
+            <h4>PRIVACY</h4>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+            <p>Cookie Policy</p>
+        </div>
+        <div class="footer-desc">
+            <h4>SERVICE</h4>
+            <p>Shop</p>
+            <p>Order ahead</p>
+            <p>Menu</p>
+        </div>
+        <div class="footer-desc">
+            <h4>ABOUT US</h4>
+            <p>Find a location</p>
+            <p>About us</p>
+            <p>Our story</p>
+        </div>
+        <div class="footer-desc">
+            <h4>INFORMATION</h4>
+            <p>Plans & pricing</p>
+            <p>Sell your products</p>
+            <p>Jobs</p>
+        </div>
+        <div class="footer-desc">
+            <h4>SOSIAL MEDIA</h4>
+            <div class="sosmed">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+    </footer>
+
+<!-- Script -->
+<script>
+  // Data menu
+    const menus = [
+        {
+        img: "/asset/Image/blog2.jpg",
+        title: "Friends & Coffee: A Perfect Blend",
+        desc: "Di sini, kopi adalah teman, dan setiap tegukan adalah kebersamaan. Mari berbagi tawa dan kisah, sambil ditemani kopi kesukaan."
+        },
+        {
+        img: "/asset/Image/blog1.jpg",
+        title: "Your Coffee, Your Art",
+        desc: "Seperti persahabatan, setiap 'latte art' dibuat dengan penuh perhatian. Ayo, kita rayakan momen-momen indah bersama."
+        },
+        {
+        img: "/asset/Image/blog3.jpg",
+        title: "Me Time, Friends Cafe Edition",
+        desc: "Butuh waktu sejenak untuk diri sendiri? Cafe Friends adalah tempat yang tepat. Nikmati ketenangan dan fokus, ditemani secangkir kopi yang selalu ada untukmu"
+        }
+    ];
+
+    // Ambil container
+    const blogContainer = document.getElementById("blogContainer");
+
+    // Loop data → render HTML
+    menus.forEach(menu => {
+        blogContainer.innerHTML += `
+        <div class="blog-item">
+            <div class="blog-image">
+                <img src="${menu.img}" alt="${menu.title}">
+            </div>
+            <div class="blog-content">
+                <h3>${menu.title}</h3>
+                <p>${menu.desc}</p>
+            </div>
+        </div>
+        `;
+    });
+
+    //Sidebar
+    function openMenu() {
+        document.getElementById("sideMenu").classList.add("active");
+        document.querySelector(".menu-btn").style.display = "none";
+    }
+
+    function closeMenu() {
+        document.getElementById("sideMenu").classList.remove("active");
+
+        // tunggu 500ms (sesuai transition sidebar) baru tampilkan tombol
+        setTimeout(() => {
+            document.querySelector(".menu-btn").style.display = "block";
+        }, 500);
+            }
+</script>
+
+</body>
+</html>
